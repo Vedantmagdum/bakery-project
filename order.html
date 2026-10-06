@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Order - Sweet Smiles</title>
+  <link rel="stylesheet" href="/static/css/order.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="order.html">ORDER</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="order-section">
+    <h1>🧁 Sweet Smiles Online Order</h1>
+    <p>Place your cake order easily — we'll make it with love!</p>
+
+    <form action="#" method="post">
+      <table class="order-table" align="center">
+        <tr>
+          <td><label for="name">Full Name:</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your full name" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email Address:</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="cake">Select Cake Type:</label></td>
+          <td>
+            <select id="cake" name="cake" required>
+              <option value="">-- Choose a Cake --</option>
+              <option>Chocolate Cake</option>
+              <option>Cheese Cake</option>
+              <option>Black Forest</option>
+              <option>Honey Rose</option>
+              <option>Pineapple Cake</option>
+              <option>Strawberry Cake</option>
+              <option>Red Velvet</option>
+              <option>Rose-Vanilla Cake</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="size">Cake Size:</label></td>
+          <td>
+            <select id="size" name="size" required>
+              <option value="">-- Select Size --</option>
+              <option>½ kg</option>
+              <option>1 kg</option>
+              <option>1½ kg</option>
+              <option>2 kg</option>
+              <option>2½ kg</option>
+              <option>3 kg</option>
+              <option>3½ kg</option>
+              <option>4 kg</option>
+              <option>4½ kg</option>
+              <option>5 kg</option>
+              <option>5½ kg</option>
+              <option>Custom Size</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="message">Message on Cake:</label></td>
+          <td><input type="text" id="message" name="message" placeholder="e.g. Happy Birthday Riya!"></td>
+        </tr>
+
+        <tr>
+          <td><label for="address">Delivery Address:</label></td>
+          <td><textarea id="address" name="address" placeholder="Enter full delivery address" rows="4" required></textarea></td>
+        </tr>
+
+        <tr>
+          <td><label for="date">Delivery Date:</label></td>
+          <td><input type="date" id="date" name="date" required></td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <button type="submit">Place Order</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body style="background-image: url('/static/Images/image.jpg.webp');">
+        <header>
+          <nav>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+              </ul>
+            </nav>
+        </header>
+
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <div class="input-group">
+        <input type="text" name="username" required>
+        <label>Username</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" required>
+        <label>password</label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+        <p class="signup-text">
+  Don't have an account? 
+  <a href="signup.html">
+    <button type="button">Sign up</button>
+  </a>
+</p>
+  </div>
+  <script>
+
+document.querySelector("form").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let username=document.querySelector('input[name="username"]').value;
+let password=document.querySelector('input[name="password"]').value;
+
+let storedUser=localStorage.getItem("username");
+let storedPass=localStorage.getItem("password");
+
+if(username===storedUser && password===storedPass)
+{
+alert("Login Successful");
+window.location="/templates/index.html";
+}
+else
+{
+alert("Invalid Username or Password");
+}
+
+});
+
+</script>
+</body>
+
+</html>

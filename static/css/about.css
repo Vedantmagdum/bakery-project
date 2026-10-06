@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    color: #b15e7c;
+    font-family: "Brush Script MT", cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5b2948;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 5px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e35b50;
+    border-bottom: 2px solid #e35b50;
+}
+
+.about-section {
+    background-color: #cd4c75;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 500px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-section h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.about-section ul {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-section li {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #db4174;
+    color: #555;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #e93c73;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+    header h1 {
+        font-size: 28px;
+
+        margin-bottom: 20px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    .about-section {
+        padding: 45px 20px;
+    }
+    .about-section h2 {
+        font-size: 24px;
+    }
+    .about-section h3 {
+        font-size: 20px;
+    }
+    .about-section p,
+    .about-section li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 12px;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+    header h1 {
+        font-size: 25px;
+    }
+}

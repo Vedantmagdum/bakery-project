@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+
+<body style="background-image: url('/static/Images/image.jpg.webp');">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="signup-container">
+
+        <h2>Create Account</h2>
+
+        <form onsubmit="signup(event)">
+
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit">Sign up</button>
+
+        </form>
+
+    </div>
+
+
+    <script>
+
+        function signup(event) {
+
+            event.preventDefault();
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            localStorage.setItem("username", username);
+            localStorage.setItem("password", password);
+
+            alert("Account Created Successfully");
+
+            window.location.href = "login.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
