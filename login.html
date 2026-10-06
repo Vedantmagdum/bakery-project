@@ -8,9 +8,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="/static/css/login.css">
+  <link rel="stylesheet" href="static/css/login.css">
 </head>
-<body style="background-image: url('/static/Images/image.jpg.webp');">
+<body style="background-image: url('static/Images/image.jpg.webp');">
         <header>
           <nav>
               <ul>
@@ -58,7 +58,7 @@ let storedPass=localStorage.getItem("password");
 if(username===storedUser && password===storedPass)
 {
 alert("Login Successful");
-window.location="/templates/index.html";
+window.location="index.html";
 }
 else
 {
